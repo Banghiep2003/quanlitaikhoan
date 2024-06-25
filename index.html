@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css"> 
+    <link rel="icon" href="image/icon_cham_cong.png">
+    <title>HT Quản Lí Tài Khoản</title>
+    <script src="https://kit.fontawesome.com/8d868834b4.js" crossorigin="anonymous"></script>
+    <style>
+        /* Additional CSS for login form styling */
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Login Form -->
+        <div class="login-form" id="login-form">
+            <h2>Đăng Nhập</h2>
+            <form id="login-form">
+                <div class="input-group" style="margin-top: -10px;">
+                    <label for="email">Tài Khoản:</label>
+                    <input type="email" id="email" name="email" style="font-size: 17px;" placeholder="Nhập email...">
+                </div>
+                <div class="input-group">
+                    <label for="password" style="margin-top: 30px;">Mật Khẩu:</label>
+                    <input type="password" id="password" name="password" style="font-size: 17px;" placeholder="Nhập mật khẩu...">
+                </div>
+                <div class="button-container">
+                    <button type="submit" id="login-btn" class="button-85">Đăng Nhập <i class="fa-solid fa-right-to-bracket"></i></button>
+                </div>                
+            </form>
+        </div>
+
+    <!-- Account Management Form (Initially hidden) -->
+        <div class="container_h2" id="account-management" style="display: none; margin-top: -30px;">
+            <h2>Quản Lí Tài Khoản</h2>
+            <form method="post" action="" name="contact-form">
+                <div style="display: flex; align-items: center;">
+                    <div class="input-group" style="margin-right: 20px; width: 220px;">
+                        <label for="phone" style="margin-right: 5px;">Tài Khoản:</label>
+                        <input type="text" name="Tài Khoản" style="font-size: 17px;" placeholder="Nhập tài khoản..." style="width: 100%;">
+                    </div>
+                    <div class="input-group" style="width: 220px;">
+                        <label for="name" style="margin-right: 5px;">Mật Khẩu:</label>
+                        <input type="text" name="Mật Khẩu" placeholder="Nhập mật khẩu..." style="font-size: 17px;">
+                    </div>
+                </div>                
+                
+                <div class="input-group">
+                    <label for="link">Link:</label>
+                    <input type="text" name="Link" style="font-size: 17px;" placeholder="Nhập link website...">
+                </div>
+                <div class="input-group">
+                    <label for="link">Loại Tài Khoản:</label>
+                    <input type="text" name="Loại Tài Khoản" style="font-size: 17px;" placeholder="Nhập loại tài khoản...">
+                </div>
+                <div class="button-container" style="margin-bottom: -10px;">
+                    <button class="button_submit" type="submit" value="submit" id="checkin">Xác Nhận <i class="fa-solid fa-circle-check"></i></button>
+                    <button class="button_getlink" type="button" id="checkout" style="margin-top: 10px;">Link Google Sheet <i class="fa-solid fa-link"></i></button>
+                </div>
+            </form>
+        </div>
+    <!-- End -->
+        <!-- <div>
+            <p class="Copyright">
+                <a href="https://www.facebook.com/banghiep1806" target="_blank" style="color: rgb(255, 255, 255); text-decoration: none;">©Phạm Nguyễn Bá Nghiệp <i class="fa-solid fa-circle-check"></i></a>
+            </p>
+        </div>                -->
+        
+    </div>
+     <div class="footer">
+        &copy; 2024 PNBN. All rights reserved.
+    </div>
+    <script src="app.js"></script> 
+    <script src="loginpage.js"></script>
+</body>
+</html>

@@ -1,0 +1,457 @@
+body {
+    margin: 0;
+    padding: 15px; /* Tạo lề 10px cho toàn bộ nội dung */
+    background-image: url('image/1.png'); 
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    font-size: 20px;
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    /* background-color: rgba(255, 255, 255, 0.8); */
+    padding: 50px;
+    width: 450px;
+    height: 370px;
+    border-radius: 10px;
+    box-shadow: 0px 5px 60px rgba(0, 0, 0, 0.788);
+}
+
+/* Apply backdrop filter if supported */
+@supports ((-webkit-backdrop-filter: blur(30px)) or (backdrop-filter: blur(30px))) {
+    .container {
+        -webkit-backdrop-filter: blur(30px); /* Safari */
+        backdrop-filter: blur(30px); /* Standard */
+    }
+}
+
+
+.input-group {
+    margin-bottom: 15px; 
+    color: white;
+    font-weight: bold;
+
+}
+
+label {
+    display: block; 
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    padding: 10px 30px;
+}
+
+#checkin {
+    background-color: #fc2e56;
+    color: white;
+}
+
+#checkout {
+    background-color: #3068ed;
+    color: white;
+}
+
+h2 {
+    margin-top: -20p;
+    text-align: center;
+}
+
+.button-container {
+    text-align: center;
+}
+
+.checkbox-group {
+    display: flex; 
+    align-items: center; 
+    margin-bottom: 15px; 
+}
+
+.checkbox-group input[type="checkbox"] {
+    margin-right: 10px; 
+}
+
+/* .Copyright {
+    font-weight: bold;
+    font-family: 'Arial', sans-serif;
+    font-size: 20px;
+    margin-top: 30px;
+    position: fixed; 
+    bottom: 0; 
+    margin-left: 75px;
+
+} */
+/* .nutdangnhap {
+    background-color: rgb(139, 5, 0); 
+    margin-top: 20px;
+    font-weight: bold;
+    color: white;
+    }
+     */
+
+
+/* CSS */
+.button-85 {
+  padding: 0.6em 2em;
+  border: none;
+  outline: none;
+  color: rgb(255, 255, 255);
+  background: #111;
+  cursor: pointer;
+  position: relative;
+  /* z-index: 0;
+  border-radius: 10px; */
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  margin-top: 15px;
+}
+
+.button-85:before {
+  content: "";
+  background: linear-gradient(
+    45deg,
+    #ff0000,
+    #ff7300,
+    #fffb00,
+    #48ff00,
+    #00ffd5,
+    #002bff,
+    #7a00ff,
+    #ff00c8,
+    #ff0000
+  );
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  background-size: 400%;
+  z-index: -1;
+  filter: blur(5px);
+  -webkit-filter: blur(5px);
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  animation: glowing-button-85 20s linear infinite;
+  transition: opacity 0.3s ease-in-out;
+  border-radius: 10px;
+}
+
+@keyframes glowing-button-85 {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 400% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
+
+.button-85:after {
+  z-index: -1;
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #222;
+  left: 0;
+  top: 0;
+  border-radius: 10px;
+}
+
+
+
+.login-form {
+    width: center;
+    height: center;
+    margin-top: 60px;
+    color: white;
+}
+h2 {
+    color: white;
+    font-weight: bold;
+}
+
+.button_submit {
+    padding: 0.6em 2em;
+    border: none;
+    outline: none;
+    color: rgb(255, 255, 255);
+    background: #111;
+    cursor: pointer;
+    position: relative;
+    /* z-index: 0;
+    border-radius: 10px; */
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    margin-top: 15px;
+  }
+  
+  .button_submit:before {
+    content: "";
+    background: linear-gradient(
+      45deg,
+      #ff0000,
+      #ff7300,
+      #fffb00,
+      #48ff00,
+      #00ffd5,
+      #002bff,
+      #7a00ff,
+      #ff00c8,
+      #ff0000
+    );
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    -webkit-filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing-button-85 20s linear infinite;
+    transition: opacity 0.3s ease-in-out;
+    border-radius: 10px;
+  }
+  
+  @keyframes glowing-button-85 {
+    0% {
+      background-position: 0 0;
+    }
+    50% {
+      background-position: 400% 0;
+    }
+    100% {
+      background-position: 0 0;
+    }
+  }
+  
+  .button_submit:after {
+    z-index: -1;
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #222;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+  }
+
+  .button_getlink {
+    padding: 0.6em 2em;
+    border: none;
+    outline: none;
+    color: rgb(255, 255, 255);
+    background: #111;
+    cursor: pointer;
+    position: relative;
+    /* z-index: 0;
+    border-radius: 10px; */
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    margin-top: 15px;
+    margin-left: 15px;
+  }
+  
+  .button_getlink:before {
+    content: "";
+    background: linear-gradient(
+      45deg,
+      #ff0000,
+      #ff7300,
+      #fffb00,
+      #48ff00,
+      #00ffd5,
+      #002bff,
+      #7a00ff,
+      #ff00c8,
+      #ff0000
+    );
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    -webkit-filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing-button-85 20s linear infinite;
+    transition: opacity 0.3s ease-in-out;
+    border-radius: 10px;
+  }
+  
+  @keyframes glowing-button-85 {
+    0% {
+      background-position: 0 0;
+    }
+    50% {
+      background-position: 400% 0;
+    }
+    100% {
+      background-position: 0 0;
+    }
+  }
+  
+  .button_getlink:after {
+    z-index: -1;
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #222;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+  }
+
+  /* Mobile view */
+  @media (max-width: 613px) {
+    .container {
+        width: 90%;
+        margin: 10px auto; /* thêm khoảng cách giữa container và cạnh của màn hình */
+        padding: 20px;
+        height: auto; /* không cố định chiều cao, để nó phù hợp với nội dung bên trong */
+    }
+    .container::after {
+        content: '';
+        display: block;
+        height: 30px; /* thêm khoảng cách 20px phía dưới */
+    }
+    button {
+        margin-top: 10px; /* tăng khoảng cách giữa các nút */
+    }
+    .login-form {
+        margin-bottom: 60px;
+    }
+
+    /* .Copyright {
+        position: fixed;
+        bottom: 0;
+        left: -75px;
+        width: 100%;
+        text-align: center;
+        color: white;
+        background-color: rgba(0, 0, 0, 0.5);
+        padding: 10px 0;
+        font-size: 14px; /* giảm kích thước font chữ để phù hợp */
+    
+    /* .nutdangnhap {
+        background-color: rgb(0, 255, 42); 
+        margin-top: 20px;
+        white-space: nowrap; /* Ngăn chặn văn bản bên trong xuống dòng */
+    } */
+
+
+    .button-container {
+        margin-bottom: -10px;
+    }
+    
+    .button-container button {
+        font-size: 16px; /* Adjust the font size */
+        padding: 10px 20px; /* Adjust the padding */
+        border-radius: 5px; /* Adjust the border radius */
+        border: none; /* Remove the border */
+        cursor: pointer; /* Change cursor to pointer */
+       
+    }
+    .button_getlink {
+        margin-top: 60px;
+    }
+    
+    @media (max-width: 613px) {
+        .container {
+            width: 90%;
+            margin: 10px auto; /* thêm khoảng cách giữa container và cạnh của màn hình */
+            padding: 20px;
+            height: auto; /* không cố định chiều cao, để nó phù hợp với nội dung bên trong */
+        }
+        .container::after {
+            content: '';
+            display: block;
+            height: 14px; /* thêm khoảng cách 20px phía dưới */
+        }
+        button {
+            margin-top: 10px; /* tăng khoảng cách giữa các nút */
+        }
+        .login-form {
+            margin-bottom: 60px;
+        }
+    
+        /* .Copyright {
+            position: fixed;
+            bottom: 0;
+            left: -75px;
+            width: 100%;
+            text-align: center;
+            color: white;
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 10px 0;
+            font-size: 14px; /* giảm kích thước font chữ để phù hợp */
+        
+        /* .nutdangnhap {
+            background-color: rgb(0, 255, 42); 
+            margin-top: 20px;
+            white-space: nowrap; /* Ngăn chặn văn bản bên trong xuống dòng */
+        
+    
+    
+        .button-container {
+            margin-bottom: -10px;
+        }    
+        .button-container button {
+            font-size: 16px; /* Adjust the font size */
+            padding: 10px 20px; /* Adjust the padding */
+            border-radius: 5px; /* Adjust the border radius */
+            border: none; /* Remove the border */
+            cursor: pointer; /* Change cursor to pointer */
+           
+        }
+        .button_getlink {
+            margin-top: 14px !important;
+        }
+        
+    }
+    .footer {
+        /* text-align: center;
+        padding: 10px 0; */
+        text-align: center;
+        padding: 10px 0;
+        /* Đảm bảo footer luôn nằm ở cuối cùng của trang */
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        margin-bottom: 20px;
+        color: white;
+        font-weight: bold;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        /* background-color: #f0f0f0; */
+        /* Thêm các thuộc tính khác cho footer của bạn */
+        
+    }
+    input::placeholder {
+        /* Kiểu chữ */
+        font-family: 'Roboto Slab', serif;
+    }
